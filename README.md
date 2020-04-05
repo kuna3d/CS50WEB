@@ -1,2 +1,2 @@
 # lecture0
-My firs lesson of CS50WEB
+My first lesson of CS50WEB
