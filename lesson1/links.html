@@ -2,9 +2,42 @@
 <html lang="" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> \my Page with Links</title>
+    <title> my Page with Links</title>
   </head>
   <body>
-    <<a href="hello.html"> >>Click Here!<< </a>
+    <a href="hello.html"> >>Click Here!<< </a>
+    <ul>
+        <li> <a href="#section1"> Link do sekcji 1 </a></li>
+        <li> <a href="#section2"> Link do sekcji 2 </a></li>
+    </ul>
+
+    <h2 id="section1"> Sekcja 1 </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <h2 id="section1"> Sekcja 2 </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <form class="" action="index.html" method="post">
+      <div>
+        <input type="text" name="name" placeholder="Twoje Imie">
+        <input type="password" name="password" placeholder="haslo">
+      </div>
+      <div> Ulubiony kolor:
+        <input type="radio" name="color" value="red"> Red
+        <input type="radio" name="color" value="blue"> Blue
+      </div>
+      <div> Z jakiego kraju jesteś:
+          <input list="countries" name="country" value="">
+          <datalist id="countries">
+            <option value="Afganistan"></option>
+            <option value="Polska"></option>
+          </datalist>
+      </div>
+    </form>
+
   </body>
+
 </html>

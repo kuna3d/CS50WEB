@@ -1,0 +1,30 @@
+ol > li {
+  color: red;
+}
+
+input[type=text] {
+  background-color: red;
+}
+
+input[type=number] {
+  background-color: green;
+}
+
+button {
+  background-color: yellow;
+  font-size: 30px
+}
+
+button:hover {
+background-color: blue;
+}
+
+a::before {
+  content: "\21d2 Click Here: ";
+  font-weight: bold;
+}
+
+p::selection {
+  color: red;
+  background-color: yellow;
+}
