@@ -28,3 +28,27 @@ p::selection {
   color: red;
   background-color: yellow;
 }
+
+@media print {
+  .screen-only {
+    display : none;
+  }
+}
+
+@media (min-width: 1000px) {
+body {
+    background-color:  red;
+  }
+h1::before {
+  content: "Witam Cię gorąco na mojej stronie."
+}
+}
+
+@media (max-width: 999px) {
+body {
+    background-color: white;
+  }
+h1::after {
+  content: "Cześć!"
+}
+}
