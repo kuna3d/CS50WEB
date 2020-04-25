@@ -1,21 +1,144 @@
 $color : #ffffff;
+$bg: #1c1406;
+$text_dark: #000000;
+$price_bg: #916900
 
-h1 {
-  color:$color;
-}
 
-div {
-  font-size: 18px;
-  p {
-    color: blue;
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%
   }
 }
 
-%message {
+body {
+  background-color: $bg;
+}
+
+.card-text {
+  color: $text_dark;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.card-img-toop {
+  margin: 0px 0 0 150px;
+}
+
+h1 {
+  color: $color;
+}
+
+.pricing-desc {
+  color: $text_dark;
+  background: $price_bg;
+  padding: 30px;
+  text-shadow:2px 2px grey;
+  font-weight: bold;
+  }
+
+.pricing-list-3 {
+  color: $text_dark;
+  list-style: none;
+}
+
+p {
+  color: $color;
+  text-align: justify;
+  vertical-align: middle;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.row > div {
+  padding: 20px;
+  background-color: black;
+  border: 2px solid black;
+}
+.container {
+  background-color: #120e06
+}
+
+.img-hover-zoom {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+
+.img-hover-zoom--blur img {
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(4px);
+  transform: scale(1.2);
+}
+
+.img-hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.nav-item {
+  color: gray;
+}
+
+%template{
+  color: $color;
+}
+
+.contact {
+  @extend %template;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: 0px;
+  opacity: 0.9;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  font-size: 15px;
+  color: #cccccc;
   font-family: sans-serif;
 }
 
-.success {
-  @extend %message;
-  background: red;
+h2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  span {
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: 5px;
+    opacity: 0.7;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+  }
+}
+
+h2 span.spacer {
+   padding:0 5px;
+}
+
+p span{
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+}
+
+a.nav-link :hover {
+    color: black;
 }
